@@ -1,0 +1,285 @@
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 120px 40px 110px;
+
+  background: #fff;
+  color: #111;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.about-container {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.about-content {
+  width: 100%;
+}
+
+
+/* =========================================
+   SECTION LABEL
+========================================= */
+
+.about-eyebrow {
+  margin: 0 0 14px;
+
+  color: #666;
+
+  font-family: "DM Sans", Arial, sans-serif;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 0.2em;
+  line-height: 1.4;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   ABOUT MAIN HEADING
+========================================= */
+
+.about-title {
+  max-width: 800px;
+
+  margin: 0;
+
+  color: #111;
+
+  font-family: "Manrope", "DM Sans", Arial, sans-serif;
+
+  /* Smaller heading */
+  font-size: clamp(32px, 3.5vw, 48px);
+
+  font-weight: 800;
+
+  line-height: 1.08;
+
+  letter-spacing: -0.04em;
+}
+
+.about-title span {
+  display: block;
+
+  color: #777;
+
+  font-weight: 400;
+}
+
+
+/* =========================================
+   ABOUT TEXT
+========================================= */
+
+.about-copy {
+  max-width: 900px;
+
+  margin-top: 30px;
+}
+
+.about-copy p {
+  margin: 0 0 22px;
+
+  color: #4f4f4f;
+
+  font-family: "DM Sans", Arial, sans-serif;
+
+  font-size: 17px;
+
+  font-weight: 400;
+
+  line-height: 1.8;
+}
+
+.about-copy p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   INFORMATION GRID
+========================================= */
+
+.about-details {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  width: 100%;
+
+  max-width: 1000px;
+
+  margin-top: 44px;
+
+  border-top: 1px solid #dedede;
+}
+
+
+/* =========================================
+   INDIVIDUAL DETAIL
+========================================= */
+
+.about-detail {
+  min-height: 100px;
+
+  padding: 22px 30px 22px 0;
+
+  border-bottom: 1px solid #dedede;
+}
+
+.about-detail:nth-child(even) {
+  padding-left: 30px;
+
+  border-left: 1px solid #dedede;
+}
+
+
+/* =========================================
+   DETAIL LABEL
+========================================= */
+
+.about-detail span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #111;
+
+  font-family: "DM Sans", Arial, sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   DETAIL VALUE
+========================================= */
+
+.about-detail strong {
+  display: block;
+
+  color: #666;
+
+  font-family: "DM Sans", Arial, sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .about {
+    padding: 100px 28px 85px;
+  }
+
+  .about-title {
+    font-size: clamp(30px, 5vw, 44px);
+  }
+
+  .about-copy {
+    margin-top: 28px;
+  }
+
+  .about-copy p {
+    font-size: 16px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .about {
+    min-height: auto;
+
+    padding: 85px 22px 70px;
+  }
+
+  .about-title {
+    font-size: clamp(30px, 8vw, 40px);
+
+    line-height: 1.08;
+
+    letter-spacing: -0.035em;
+  }
+
+  .about-copy {
+    margin-top: 24px;
+  }
+
+  .about-copy p {
+    font-size: 15px;
+
+    line-height: 1.75;
+  }
+
+  .about-details {
+    grid-template-columns: 1fr;
+
+    margin-top: 36px;
+  }
+
+  .about-detail {
+    min-height: auto;
+
+    padding: 18px 0;
+  }
+
+  .about-detail:nth-child(even) {
+    padding-left: 0;
+
+    border-left: none;
+  }
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 420px) {
+  .about {
+    padding: 75px 18px 60px;
+  }
+
+  .about-title {
+    font-size: 30px;
+  }
+
+  .about-copy p {
+    font-size: 14px;
+  }
+}

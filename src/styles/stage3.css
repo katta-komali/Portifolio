@@ -1,0 +1,87 @@
+
+.scroll-progress {
+  position: fixed;
+  inset: 0 auto auto 0;
+  height: 3px;
+  z-index: 2000;
+  background: #111;
+  transition: width 80ms linear;
+}
+
+.theme-toggle {
+  position: fixed;
+  right: 22px;
+  top: 92px;
+  z-index: 1100;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #d7d7d7;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: #111;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  backdrop-filter: blur(10px);
+  transition: transform 180ms ease, background 180ms ease;
+}
+.theme-toggle:hover { transform: translateY(-2px); }
+
+.theme-dark body { background: #101010; color: #f4f4f4; }
+.theme-dark .navbar,
+.theme-dark .navbar-container,
+.theme-dark .theme-toggle,
+.theme-dark .back-to-top { background: rgba(16,16,16,.94); color: #f4f4f4; border-color: #333; }
+.theme-dark .navbar-links a,
+.theme-dark .navbar-logo,
+.theme-dark .hero,
+.theme-dark .snapshot,
+.theme-dark .about-section,
+.theme-dark .skills-section,
+.theme-dark .projects-section,
+.theme-dark .experience-section,
+.theme-dark .contact-section,
+.theme-dark .footer { color: #f4f4f4; }
+.theme-dark .project-card,
+.theme-dark .snapshot-card,
+.theme-dark .bring-card,
+.theme-dark .hero-aside { background: #171717; border-color: #333; }
+.theme-dark .project-filters button { background: #171717; color: #f4f4f4; border-color: #333; }
+.theme-dark .project-filters button.active { background: #f4f4f4; color: #111; border-color: #f4f4f4; }
+.theme-dark .scroll-progress { background: #f4f4f4; }
+.theme-dark .secondary-button { border-color: #666; color: #f4f4f4; }
+
+@media (max-width: 600px) {
+  .theme-toggle { right: 14px; top: 84px; width: 40px; height: 40px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle, .scroll-progress { transition: none; }
+}
+
+.theme-dark .career-cta-container {
+  background: #171717;
+  border-color: #333;
+}
+.theme-dark .career-cta-container h2 span,
+.theme-dark .career-cta-container p:not(.section-kicker) {
+  color: #aaa;
+}
+.theme-dark .career-primary {
+  background: #f4f4f4;
+  color: #111;
+  border-color: #f4f4f4;
+}
+.theme-dark .career-secondary {
+  color: #f4f4f4;
+  border-color: #555;
+}
+.theme-dark .career-secondary:hover {
+  background: #f4f4f4;
+  color: #111;
+}
+.theme-dark .project-text-link {
+  color: #f4f4f4;
+}
+.theme-dark .project-card-featured .project-text-link {
+  color: #fff;
+}

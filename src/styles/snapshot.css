@@ -1,0 +1,241 @@
+/* =========================
+   SNAPSHOT
+========================= */
+
+.snapshot {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+
+  padding: 100px 60px;
+
+  border-top: 1px solid #ddd;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+.snapshot-heading {
+  width: 100%;
+  max-width: 700px;
+  min-width: 0;
+
+  margin-bottom: 60px;
+}
+
+.snapshot-heading p {
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: 600;
+
+  margin-bottom: 15px;
+
+  overflow-wrap: break-word;
+}
+
+.snapshot-heading h2 {
+  font-size: 42px;
+  line-height: 1.2;
+
+  margin: 0;
+
+  overflow-wrap: anywhere;
+}
+
+.snapshot-cards {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+.snapshot-card {
+  width: 100%;
+  min-width: 0;
+
+  padding: 30px;
+
+  border: 1px solid #ddd;
+
+  min-height: 240px;
+
+  background: #faf9f6;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.snapshot-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.snapshot-card span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.snapshot-card h3 {
+  font-size: 22px;
+  line-height: 1.3;
+
+  margin: 45px 0 15px;
+
+  overflow-wrap: anywhere;
+}
+
+.snapshot-card p {
+  font-size: 15px;
+  line-height: 1.6;
+
+  margin: 0;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+  .snapshot {
+    padding: 80px 40px;
+  }
+
+  .snapshot-heading h2 {
+    font-size: 36px;
+  }
+
+  .snapshot-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .snapshot {
+    padding: 70px 20px;
+  }
+
+  .snapshot-heading {
+    width: 100%;
+    max-width: 100%;
+
+    margin-bottom: 40px;
+  }
+
+  .snapshot-heading p {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .snapshot-heading h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .snapshot-cards {
+    width: 100%;
+
+    grid-template-columns: minmax(0, 1fr);
+
+    gap: 16px;
+  }
+
+  .snapshot-card {
+    width: 100%;
+    min-width: 0;
+
+    min-height: auto;
+
+    padding: 25px;
+  }
+
+  .snapshot-card h3 {
+    font-size: 20px;
+
+    margin: 30px 0 12px;
+  }
+
+  .snapshot-card p {
+    font-size: 14px;
+  }
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 400px) {
+
+  .snapshot {
+    padding: 60px 16px;
+  }
+
+  .snapshot-heading h2 {
+    font-size: 27px;
+  }
+
+  .snapshot-card {
+    padding: 20px;
+  }
+
+  .snapshot-card h3 {
+    font-size: 19px;
+  }
+
+  .snapshot-card p {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================
+   EXTREMELY SMALL
+========================= */
+
+@media (max-width: 260px) {
+
+  .snapshot {
+    padding: 50px 10px;
+  }
+
+  .snapshot-heading h2 {
+    font-size: 24px;
+  }
+
+  .snapshot-card {
+    padding: 16px;
+  }
+
+  .snapshot-card h3 {
+    font-size: 17px;
+  }
+
+  .snapshot-card p {
+    font-size: 12px;
+  }
+}

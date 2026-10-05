@@ -1,0 +1,96 @@
+.career-cta-section {
+  padding: 72px 24px;
+}
+
+.career-cta-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 44px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 36px;
+  border: 1px solid var(--border, #ddd);
+  background: var(--surface, #f7f7f7);
+}
+
+.career-cta-container h2 {
+  max-width: 720px;
+  margin: 8px 0 14px;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.04;
+  letter-spacing: -0.045em;
+}
+
+.career-cta-container h2 span {
+  color: var(--accent, #555);
+}
+
+.career-cta-container p:not(.section-kicker) {
+  max-width: 680px;
+  margin: 0;
+  color: var(--muted, #666);
+  line-height: 1.75;
+}
+
+.section-kicker {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.career-cta-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 220px;
+}
+
+.career-cta-actions a,
+.career-cta-actions button {
+  min-height: 48px;
+  padding: 12px 16px;
+  border: 1px solid var(--border, #ddd);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.career-primary {
+  color: #fff;
+  background: #111;
+}
+
+.career-secondary {
+  color: var(--text, #111);
+  background: transparent;
+}
+
+.career-cta-actions a:hover,
+.career-cta-actions button:hover {
+  transform: translateY(-2px);
+}
+
+.career-secondary:hover {
+  background: var(--text, #111);
+  color: var(--background, #fff);
+}
+
+@media (max-width: 760px) {
+  .career-cta-section {
+    padding: 48px 16px;
+  }
+
+  .career-cta-container {
+    padding: 28px 22px;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .career-cta-actions {
+    min-width: 0;
+  }
+}

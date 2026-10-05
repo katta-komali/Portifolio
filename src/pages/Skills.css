@@ -1,0 +1,254 @@
+/* =========================
+   SKILLS
+========================= */
+
+.skills-section {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+
+  padding: 100px 8%;
+
+  background: #f7f7f7;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+.skills-container {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 0;
+
+  margin: 0 auto;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.skills-heading {
+  width: 100%;
+  max-width: 700px;
+  min-width: 0;
+
+  margin-bottom: 55px;
+}
+
+.skills-heading > p:first-child {
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 12px;
+}
+
+.skills-heading h2 {
+  font-size: 48px;
+
+  margin: 0 0 20px;
+
+  line-height: 1.1;
+
+  overflow-wrap: anywhere;
+}
+
+.skills-heading h2 span {
+  font-weight: 400;
+}
+
+.skills-description {
+  color: #666;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  margin: 0;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   SKILLS LIST
+========================= */
+
+.skills-list {
+  width: 100%;
+  min-width: 0;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  gap: 35px 60px;
+}
+
+.skill-item {
+  width: 100%;
+  min-width: 0;
+}
+
+.skill-info {
+  width: 100%;
+  min-width: 0;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 10px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+.skill-info span {
+  min-width: 0;
+
+  overflow-wrap: break-word;
+}
+
+.skill-bar {
+  width: 100%;
+  min-width: 0;
+
+  height: 8px;
+
+  background: #ddd;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  max-width: 100%;
+
+  background: #111;
+
+  border-radius: 10px;
+
+  transition: width 1s ease;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+  .skills-section {
+    padding: 80px 40px;
+  }
+
+  .skills-heading h2 {
+    font-size: 42px;
+  }
+
+  .skills-list {
+    gap: 30px 40px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .skills-section {
+    padding: 70px 20px;
+  }
+
+  .skills-heading {
+    margin-bottom: 40px;
+  }
+
+  .skills-heading > p:first-child {
+    font-size: 12px;
+
+    letter-spacing: 2px;
+  }
+
+  .skills-heading h2 {
+    font-size: 36px;
+  }
+
+  .skills-description {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+  .skills-list {
+    grid-template-columns: minmax(0, 1fr);
+
+    gap: 25px;
+  }
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 400px) {
+
+  .skills-section {
+    padding: 60px 16px;
+  }
+
+  .skills-heading h2 {
+    font-size: 30px;
+  }
+
+  .skills-description {
+    font-size: 14px;
+  }
+
+  .skill-info {
+    font-size: 14px;
+  }
+
+  .skill-bar {
+    height: 7px;
+  }
+}
+
+
+/* =========================
+   VERY SMALL
+========================= */
+
+@media (max-width: 260px) {
+
+  .skills-section {
+    padding: 50px 10px;
+  }
+
+  .skills-heading h2 {
+    font-size: 25px;
+  }
+
+  .skills-description {
+    font-size: 12px;
+  }
+
+  .skill-info {
+    font-size: 12px;
+  }
+}

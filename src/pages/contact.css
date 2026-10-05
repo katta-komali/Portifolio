@@ -1,0 +1,19 @@
+.contact-section { padding: 120px 28px; background: #fff; }
+.contact-container { width: min(1180px, 100%); margin: 0 auto; }
+.contact-heading { max-width: 760px; margin-bottom: 65px; }
+.contact-heading h2 { margin: 0 0 28px; font-size: clamp(44px, 6vw, 76px); line-height: .96; letter-spacing: -.06em; }
+.contact-heading h2 span { display: block; color: #777; font-weight: 400; }
+.contact-heading > p:last-child { max-width: 620px; margin: 0; color: #555; font-size: 16px; line-height: 1.8; }
+.contact-content { display: block; max-width: 760px; }
+.contact-info { border-top: 1px solid #ddd; }
+.contact-item { display: grid; gap: 7px; padding: 22px 0; border-bottom: 1px solid #ddd; color: #111; text-decoration: none; }
+.contact-item strong { font-size: 15px; font-weight: 600; }
+.contact-label { color: #888; font-size: 10px; font-weight: 800; letter-spacing: .15em; }
+.contact-socials { display: flex; flex-wrap: wrap; gap: 18px; padding-top: 24px; }
+.contact-socials a { color: #111; text-decoration: none; font-size: 12px; font-weight: 700; border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+.theme-dark .contact-section { background: #101010; }
+.theme-dark .contact-item { border-color: #333; color: #f4f4f4; }
+.theme-dark .contact-socials a { color: #f4f4f4; border-color: #555; }
+.theme-dark .contact-heading > p:last-child { color: #aaa; }
+@media (max-width: 800px) { .contact-section { padding: 90px 20px; } }
+@media (max-width: 520px) { .contact-heading h2 { font-size: 43px; } }
